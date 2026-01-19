@@ -1,85 +1,39 @@
-import React from 'react'
+
 
 function Home() {
   return (
     <>
 
-    <div
-    style={{
-        backgroundColor: "#312e81",
-        display: "flex",
-        justifyContent: "center"
-    }}
->
+    <div className="bg-indigo-900 flex justify-center">
     
-    <div
-        style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            color: "white",
-            width: "100%",
-            maxWidth: "1200px",
-        }}
->
-    <div 
-        style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "1rem",
-            alignItems: "center",
-            justifyContent: "center",
-            paddingTop: "1rem",
-            paddingBottom: "1rem"
-           
-        }}
->
-        <h2
-        style={{
-            fontSize: "2rem",
-            fontWeight: "bold"
-        }}
-        >
-            Seja Bem Vindo!
-        </h2>
+    <div className="container grid grid-cols-2 text-white">
 
-        <p
-        style={{
-            fontSize: "1.25rem"
-        }}
-        >
-           Expresse aqui seus pensamentos e opiniões!
-        </p>
+    <div className="flex flex-col gap-4 items-center justify-center py-4" >
 
-        <div
-        style={{
-            display: "flex",
-            justifyContent: "space-around",
-            gap: "1rem"
-        }}
->
-        <div
-        style={{
-            borderRadius: "0.5rem",
-            color: "white",
-            border: "2px solid white",
-            padding: "0.5rem 1rem",
-        }}
->
+        <h2 className="text-5xl font-bold"> 
+            Seja Bem Vindo! </h2>
+
+        <p className="text-xl">
+             Expresse aqui seus pensamentos e opiniões! </p>
+
+        <div className="flex justify-around gap-4">
+
+        <div className="rounded text-white border-white border-solid border-2 py-2 px-4">
+
            Nova Postagem
-        </div>
-        </div>
+
         </div>
 
-        <div
-        style={{
-            display: "flex",
-            justifyContent: "center",
-        }}
->
+        </div>
+
+        </div>
+
+        <div className="flex justify-center">
         <img
             src="https://i.imgur.com/fyfri1v.png"
             alt="Imagem pagina Home"
-            style={{ width: "66%"}}
+            className="w-2/3"
+            
 
             />
         </div>
