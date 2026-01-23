@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({ //instância do Axios chamada api
-    baseURL: "https://blog-pessoal-projeto-2.onrender.com"
+    baseURL: import.meta.env.VITE_API_URL
 })
 
 
